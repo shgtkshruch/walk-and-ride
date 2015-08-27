@@ -1,0 +1,19 @@
+{
+  "name": "walk-and-ride",
+  "version": "0.0.0",
+  "homepage": "https://github.com/shgtkshruch/walk-and-ride",
+  "authors": [
+    "shgtkshruch <shgtk.shruch@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.5"
+  }
+}

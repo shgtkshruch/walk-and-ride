@@ -1,0 +1,19 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset='UTF-8')
+    title walk-and-ride
+    meta(content='IE=edge', http-equiv='X-UA-Compatible')
+    meta(content='width=device-width, initial-scale=1' name='viewport')
+
+    link(rel='stylesheet', href='styles/style.css', media='all')
+  body
+    h1 walk and ride
+
+    // build:js scripts/vendor.js
+    script(src='../bower_components/jquery/dist/jquery.min.js')
+    // endbuild
+
+    // build:js scripts/main.js
+    script(src='scripts/script.js')
+    // endbuild
