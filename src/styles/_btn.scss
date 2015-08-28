@@ -1,0 +1,36 @@
+$padding: 15px;
+$border-width: 2px;
+
+.btn {
+  display: inline-block;
+  padding: $padding 20px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: $font-family-raleway;
+  font-weight: 400;
+  transition: all 0.3s;
+  & + & {
+    margin-top: 20px;
+    @media (min-width: 420px) {
+      margin-left: 20px;
+    }
+  }
+  &--blue {
+    background-color: $color-blue;
+    &:hover {
+      background-color: lighten($color-blue, 15%);
+    }
+  }
+  &--ghost {
+    padding-top: $padding - $border-width;
+    padding-bottom: $padding - $border-width;
+    border: $border-width solid #fff;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+

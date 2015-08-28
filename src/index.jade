@@ -6,14 +6,9 @@ html(lang="ja")
     meta(content='IE=edge', http-equiv='X-UA-Compatible')
     meta(content='width=device-width, initial-scale=1' name='viewport')
 
+    link(href='https://fonts.googleapis.com/css?family=Raleway:400,200,500,700' rel='stylesheet')
     link(rel='stylesheet', href='styles/style.css', media='all')
   body
-    h1 walk and ride
+    include partials/header
 
-    // build:js scripts/vendor.js
-    script(src='../bower_components/jquery/dist/jquery.min.js')
-    // endbuild
 
-    // build:js scripts/main.js
-    script(src='scripts/script.js')
-    // endbuild

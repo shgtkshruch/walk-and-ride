@@ -1,0 +1,48 @@
+.header {
+  font-family: $font-family-raleway;
+  padding: 105px 0;
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  @media (min-width: $screen-sm) {
+    text-align: start;
+  }
+  &__main {
+    @media (min-width: $screen-sm) {
+      margin-top: 40px;
+    }
+  }
+  &__title {
+    margin-bottom: 40px;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 1.5;
+    @media (min-width: $screen-sm) {
+      font-size: 44px;
+    }
+    @media (min-width: $screen-md) {
+      font-size: 58px;
+    }
+    @media (min-width: $screen-lg) {
+      font-size: 60px;
+    }
+    > span {
+      font-weight: 200;
+      padding-left: 14px;
+    }
+  }
+  &__text {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.6;
+  }
+  &__author {
+    margin-bottom: 55px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
