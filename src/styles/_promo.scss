@@ -1,0 +1,20 @@
+.promo {
+  margin-bottom: 60px;
+  text-align: center;
+  @media (min-width: $screen-md) {
+    text-align: start;
+  }
+  &__img {
+    margin-bottom: 25px;
+  }
+  &__heading {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: $font-family-raleway;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 16px;
+  }
+}

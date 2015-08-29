@@ -1,0 +1,10 @@
+- promos = [{slug: 'places', text: 'Seamlessly empower fully researched growth strategies and interoperable internal sources.'}, {slug: 'settings', text: 'Collaboratively administrate turnkey channels whereas virtual e-tailers an other media.'}, {slug: 'easy', text: 'Interactively procrastinate high-payoff content without backward-compatible data.'}, {slug: 'global', text: 'Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness.'}]
+
+section.section--promo
+  .container
+    .row
+      each promo, i in promos
+        .promo.col-xs-offset-2.col-xs-8.col-sm-offset-0.col-sm-6.col-md-3
+          img.promo__img(src="images/#{promo.slug}.png" alt="#{promo.slug}")
+          h2.promo__heading= promo.slug
+          p.promo__text= promo.text
