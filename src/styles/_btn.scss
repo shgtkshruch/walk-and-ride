@@ -61,5 +61,37 @@ $border-width: 2px;
     line-height: 1;
     text-align: left;
   }
+  &--sns {
+    color: #fff;
+    width: 100%;
+    padding: 5px 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    @media (min-width: $screen-sm) {
+      margin-top: 0;
+    }
+    &.twitter {
+      background-color: #3bcbff;
+      &:hover {
+        background-color: lighten(#3bcbff, 10%);
+      }
+    }
+    &.facebook {
+      background-color: #1e3aa6;
+      &:hover {
+        background-color: lighten(#1e3aa6, 10%);
+      }
+    }
+    &.google {
+      background-color: #d72d26;
+      &:hover {
+        background-color: lighten(#d72d26, 10%);
+      }
+    }
+  }
 }
 

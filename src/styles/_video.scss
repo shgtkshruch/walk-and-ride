@@ -1,0 +1,18 @@
+.video {
+  text-align: center;
+  &__title {
+    margin-bottom: 25px;
+    font-family: $font-family-raleway;
+    font-size: 36px;
+    line-height: 1;
+    text-transform: uppercase;
+    @media (min-width: $screen-md) {
+      font-size: 48px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 35px;
+    font-size: 19px;
+    color: #919191;
+  }
+}

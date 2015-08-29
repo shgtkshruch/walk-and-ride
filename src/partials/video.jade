@@ -1,0 +1,20 @@
+- snses = [{class: 'twitter', text: 'Twitter'}, {class: 'facebook', text: 'Facebook'}, {class: 'google', text: 'Google+'}]
+section.section--video
+  .container
+    .row
+      .video.col-xs-12.col-sm-12.col-md-offset-1.col-md-10
+        h2.video__title explore. walk & ride in action
+        p.video__subtitle Just try it for yourself
+        .embed-responsive.embed-responsive-16by9
+          iframe.video__movie.embed-responsive-item(src="https://player.vimeo.com/video/106575373" width="500" height="281" frameborder="0")
+        .sns.row.clearfix
+          .col-xs-12.col-sm-4
+            span.sns__text Share it with your friends:
+          .col-xs-12.col-sm-8
+            .row
+              each sns, i in snses
+                .col-xs-offset-3.col-xs-6.col-sm-offset-0.col-sm-4
+                  a(href="#" class="btn btn--sns #{sns.class}")
+                    | via
+                    strong= sns.text
+
