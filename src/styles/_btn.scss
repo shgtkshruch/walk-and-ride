@@ -11,13 +11,19 @@ $border-width: 2px;
   font-family: $font-family-raleway;
   font-weight: 400;
   transition: all 0.3s;
-  & + & {
-    margin-top: 20px;
-    @media (min-width: 420px) {
-      margin-left: 20px;
+  &--vertical {
+    & + &  {
+      margin-top: 20px;
+      @media (min-width: 420px) {
+        margin-left: 20px;
+      }
     }
   }
+  &--horizontal {
+    margin: 0 10px 20px;
+  }
   &--blue {
+    color: #fff;
     background-color: $color-blue;
     &:hover {
       background-color: lighten($color-blue, 15%);
@@ -31,6 +37,29 @@ $border-width: 2px;
       background-color: #fff;
       color: #000;
     }
+  }
+  &--with-icon {
+    position: relative;
+    padding-left: 60px;
+    width: 180px;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 34px;
+  }
+  &__title {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+  }
+  &__subtitle {
+    display: block;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
   }
 }
 

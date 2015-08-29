@@ -1,0 +1,25 @@
+.discover {
+  text-align: center;
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
+  &__main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__heading {
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    @media (min-width: $screen-md) {
+      font-size: 72px;
+    }
+  }
+  &__text {
+    margin-bottom: 70px;
+  }
+  &__img {
+    width: 100%;
+  }
+}
