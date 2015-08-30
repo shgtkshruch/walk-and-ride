@@ -1,0 +1,41 @@
+.feature {
+  &__main {
+    padding-top: 35px;
+  }
+  &__heading {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 6px solid #f4f4f4;
+    font-family: $font-family-raleway;
+    font-size: 36px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    @media (min-width: $screen-md) {
+      font-size: 48px;
+    }
+  }
+  &__item {
+    width: 300px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    font-size: 23px;
+    font-weight: 300;
+    background-position: left center;
+    background-repeat: no-repeat;
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        background-image: url('../images/icon-#{$i}.png');
+      }
+    }
+    @media (min-width: $screen-md) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+}

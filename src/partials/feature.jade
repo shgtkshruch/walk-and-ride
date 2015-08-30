@@ -1,0 +1,15 @@
+- list = ['Fastest navigation', 'Huge number of cities', 'Only the best routes', 'Beautiful locations', 'Cloud sync']
+
+section.section--feature
+  .container
+    .row
+      .feature
+        .col-xs-12.col-sm-6.col-sm-push-6.col-lg-5.col-lg-offset-1
+          .feature__main
+            h3.feature__heading the simplest ui
+            ul
+              each val, i in list
+                li.feature__item= val
+        .col-xs-12.col-sm-6.col-sm-pull-6
+          img.feature__img(src="images/screen.png" alt="")
+

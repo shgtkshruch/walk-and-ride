@@ -14,7 +14,11 @@
   }
   &--comment {
     padding-top: 70px;
-    padding-bottom: 60px;
-    background-color: #10bbf1;
+    padding-bottom: 80px;
+    background-color: $color-blue;
+  }
+  &--feature {
+    padding-top: 105px;
+    padding-bottom: 90px;
   }
 }
