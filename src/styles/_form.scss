@@ -1,0 +1,24 @@
+.form {
+  margin-bottom: 30px;
+  &__input {
+    height: 58px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: 2px solid #d8d8d8;
+    border-radius: 5px;
+    @media (min-width: 410px) {
+      width: auto;
+      margin-bottom: 0;
+    }
+    @media (min-width: $screen-sm) {
+      min-width: 380px;
+    }
+  }
+  &__btn {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 58px;
+  }
+}

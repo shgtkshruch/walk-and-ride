@@ -1,0 +1,12 @@
+.news {
+  &__heading {
+    margin-bottom: 40px;
+    font-family: $font-family-raleway;
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @media (min-width: $screen-md) {
+      font-size: 48px;
+    }
+  }
+}
