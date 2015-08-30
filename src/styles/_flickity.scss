@@ -1,0 +1,13 @@
+.flickity {
+  padding-bottom: 55px;
+  &-page-dots .dot {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    opacity: .3;
+    &.is-selected {
+      background-color: transparent;
+      border: 2px solid #fff;
+    }
+  }
+}

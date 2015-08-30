@@ -8,6 +8,11 @@ html(lang="ja")
 
     link(href='https://fonts.googleapis.com/css?family=Raleway:400,200,500,700' rel='stylesheet')
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet')
+
+    // build:css styles/vendor.css
+    link(rel='stylesheet', href='/bower_components/flickity/dist/flickity.min.css', media='all')
+    // endbuild
+
     link(rel='stylesheet', href='styles/style.css', media='all')
   body
     include partials/header
@@ -16,4 +21,15 @@ html(lang="ja")
       include partials/promo
       include partials/discover
       include partials/video
+      include partials/comment
+
+
+    // build:js scripts/vendor.js
+    script(src="../bower_components/jquery/dist/jquery.min.js")
+    script(src="../bower_components/flickity/dist/flickity.pkgd.min.js")
+    // endbuild
+
+    // build:js scripts/main.js
+    script(src="scripts/flickity.js")
+    // endbuild
 

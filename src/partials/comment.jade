@@ -1,0 +1,11 @@
+- comments = [{heading: 'People talking about #WalkandRide', text: 'Join our #WalkandRide adventure. Meet up in London this Saturday! Spread the word and join us for fun.'}, {heading: 'Users loving #WalkandRide', text: "Joining this weekend's #WalkandRide fun! @emmy_lemmy bring your dogs, we can make it a fun walk!"}, {heading: 'Folks enjoying #WalkandRide', text: 'Nothing to fear, the new #WalkandRide has my tiny street covered, so cool and such a powerful app.'}]
+
+section.section--comment
+  .container
+    .row
+      .col-xs-12.col-sm-offset-1.col-sm-10
+        #js-flickity.flickity
+          each comment, i in comments
+            .comment
+              h3.comment__heading= comment.heading
+              p.comment__text= comment.text
